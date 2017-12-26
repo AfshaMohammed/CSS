@@ -1,0 +1,50 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Grid based layout system</title>
+		<style>
+			.grid-container{
+				display:grid;
+				grid-template-columns:1fr 2fr 1fr;
+				grid-gap:1em;
+				grid-auto-rows:minmax(100px, auto);
+				/*justify-items:center;*/
+				/*justify-items:start;*/
+				/*justify-i/tems:end;*/
+				/*justify-items:stretch;*/ /*it is default*/
+				/*align-items:end;*/
+				/*align-items:start;*/
+				/*align-items:center;*/
+				/*/align-items:stretch;*/
+			}
+			.grid-container > div{
+				background-color:#eee;
+				padding:1em;
+			}
+			.grid-container > div:nth-child(odd){
+				background-color:#ddd;
+			}
+			.grid-item1{
+				align-self:center;
+			}
+			.grid-item2{
+				align-self:end;
+			}
+			.grid-item3{
+				justify-self:end;
+			}
+			.grid-item4{
+				justify-self:center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="grid-container">
+			<div class="grid-item1">Lorem1</div>
+			<div class="grid-item2">Lorem4</div>
+			<div class="grid-item3">Lorem2</div>
+			<div class="grid-item4">Lorem5</div>
+			
+		</div>
+	</body>
+</html>
