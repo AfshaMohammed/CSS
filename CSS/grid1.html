@@ -19,6 +19,17 @@
 			.wrapper > div:nth-child(odd){
 				background-color:#ddd;
 			}
+			.nested{
+				display:grid;
+				grid-auto-rows:70px;
+				grid-template-columns:repeat(3, 1fr);
+				grid-gap:1em;
+			}
+			.nested > div {
+				border:1px solid black;
+				padding:25px;
+
+			}
 		</style>
 	</head>
 	<body>
@@ -28,6 +39,14 @@
 			</div>
 			<div>
 				Lorem ipsum dolor sit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?
+			</div>
+			<div class="nested">
+				<div>Lorem</div>
+				<div>Lorem</div>
+				<div>Lorem</div>
+				<div>Lorem</div>
+				<div>Lorem</div>
+				<div>Lorem</div>
 			</div>
 			<div>
 				Lorem ipsum dolor sit
