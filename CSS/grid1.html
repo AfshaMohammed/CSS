@@ -6,9 +6,11 @@
 			.wrapper{
 				display:grid;
 				/*grid-template-columns:1fr 1fr 1fr;*/
-				/*grid-template-columns:repeat(3, 1fr);*/
-				grid-template-columns:repeat(3, 1fr 2fr);
+				grid-template-columns:repeat(3, 1fr);
+				/*grid-template-columns:repeat(3, 1fr 2fr);*/
 				grid-gap:1em;
+				/*grid-auto-rows:100px;*/
+				grid-auto-rows:minmax(100px, auto);
 			}
 			.wrapper > div{
 				background-color: #eee;
@@ -22,10 +24,10 @@
 	<body>
 		<div class="wrapper">
 			<div>
-				Lorem ipsum dolor sit
+				Lorem ipsum dolor sit.
 			</div>
 			<div>
-				Lorem ipsum dolor sit
+				Lorem ipsum dolor sit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?
 			</div>
 			<div>
 				Lorem ipsum dolor sit
