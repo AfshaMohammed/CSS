@@ -3,28 +3,68 @@
 	<head>
 		<title>Flexbox</title>
 		<style>
-			.flex-container{
-				background-color:gray;
-				display:flex;
-				width:70%;
+			.grid-container{
+				display:grid;
+				grid-template-columns:1fr 1fr 1fr;
+				grid-gap:10px;
 			}
-			.flex-item{
-				background-color:white;
-				
-				padding:16px 32px;
-				margin:25px;
-				font-size:2em;
-				
+			.grid-container > div{
+				background-color: #f1f1c1;
+				padding:55px;
+
 			}
+			.grid-container > div:nth-child(odd){
+				background-color: #f1f1e1;	
+			}
+			.grid-item1{
+				grid-column:1/span 2;
+			}
+			.grid-item3{
+				grid-row:2/4;
+			}
+			.grid-item6{
+				grid-column:2/span 2;
+			}
+			.grid-item7{
+				grid-column:1/span 2;
+			}
+			.grid-item9{
+				grid-column:1/span 3;
+			}
+
+
 		</style>
 	</head>
 	<body>
-		<div class="flex-container">
-			<div class="flex-item">1</div>
-			<div class="flex-item" >2</div>
-			<div class="flex-item" style="flex-shrink:0">3</div>
-			<div class="flex-item">4</div>
-			<div class="flex-item">5</div>
+		<div class="grid-container">
+			<div class="grid-item1">
+				Box1
+			</div>
+			<div class="grid-item2">
+				Box2
+			</div>
+			<div class="grid-item3">
+				Box3
+			</div>
+			<div class="grid-item4">
+				Box4
+			</div>
+			<div class="grid-item5">
+				Box5
+			</div>
+			<div class="grid-item6">
+				Box6
+			</div>
+			<div class="grid-item7">
+				Box7
+			</div>
+			<div class="grid-item8">
+				Box8
+			</div>
+
+			<div class="grid-item9">
+				Box9
+			</div>
 		</div>
 	</body>
 </html>
