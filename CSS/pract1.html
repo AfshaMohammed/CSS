@@ -1,0 +1,29 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Flexbox Item properties</title>
+		<style>
+		.flex-container{
+			display:flex;
+			background-color:gray;
+		}
+		.flex-container > div{
+			background-color:white;
+			margin:5px;
+			padding:25px;
+		}
+	</style>
+	</head>
+	<body>
+		<div class="flex-container">
+			<div style="order:5">Order1</div>
+			<div style="order:2">Order2</div>
+			<div style="order:8">Order3</div>
+			<div style="order:6">Order4</div>
+			<div style="order:4">Order5</div>
+			<div style="order:7">Order6</div>
+			<div style="order:1">Order7</div>
+			<div style="order:3">Order8</div>
+		</div>
+	</body>
+</html>
