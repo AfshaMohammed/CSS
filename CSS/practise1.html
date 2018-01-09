@@ -1,0 +1,39 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Flexbox practise</title>
+		<style>
+			.flex-container{
+				display:flex;
+
+				background-color:#808080;
+				height:300px;
+			}
+			.flex-container > div{
+				background-color:#fff;
+				margin:5px;
+				font-size:2em;
+				padding:25px;
+			}
+			@media screen and (min-width:700px) and (max-width:1000px){
+				body{
+					background-color:#f1f1c1;
+				}
+			}
+
+		</style>
+	</head>
+	<body>
+		<h1>Flexbox </h1>
+		<div class="flex-container">
+			<div  style="align-self:flex-start">1</div>
+			<div>2</div>
+			<div  style="align-self:flex-end">3</div>
+			<div>4</div>
+			<div>5</div>
+			<div style="align-self:center">6</div>
+			<div>7</div>
+			<div>8</div>
+		</div>
+	</body>
+</html>
