@@ -1,0 +1,42 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Media Query</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			.flex-container1{
+				display:flex;
+				background-color:#808080;
+				flex-direction:row;
+			}
+			.flex-container1 > div {
+				border:1px solid black;
+				padding:15px;
+				background-color:#f1f1c1;
+				margin:10px;
+				
+			}
+			.flex-container1 > div:nth-child(odd) {
+				background-color:#f1f1e1;
+			}
+			@media screen and (max-width:750px){
+				.flex-container1{
+					display:flex;
+					background-color:#808080;
+					flex-direction:column;
+				}
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="flex-container1">
+			<div class="flex-item">1. Flexbox layout module, makes it easier to design flexbox responsive layout structure without having to use floats and positioning </div>
+			<div class="flex-item">2. Flexbox layout module, makes it easier to design flexbox responsive layout structure without having to use floats and positioning</div>
+			<div class="flex-item">3. Flexbox layout module, makes it easier to design flexbox responsive layout structure without having to use floats and positioning</div>
+			<div class="flex-item">4. Flexbox layout module, makes it easier to design flexbox responsive layout structure without having to use floats and positioning</div>
+			<div class="flex-item">5. Flexbox layout module, makes it easier to design flexbox responsive layout structure without having to use floats and positioning</div>
+		</div>
+
+	</body>
+</html>
