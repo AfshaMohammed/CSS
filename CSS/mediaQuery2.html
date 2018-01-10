@@ -1,0 +1,46 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Media Query</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			.flex-container{
+				width:1200px;
+				margin:auto;
+			}
+			#left{
+				width:600px;
+				background-color:#f1f1c1;
+				float:left;
+			}
+			#right{
+				width:600px;
+				background-color:#f1f1e1;
+				float:right;
+			}
+			@media screen and (max-width:750px){
+				.flex-container{
+				width:100%;
+			}
+			#left{
+				width:100%;
+			}
+			#right{
+				width:100%;
+			}
+			img{
+				width:100%;
+			}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="flex-container">
+				<img src="flex.jpg" alt="Flexbox">
+				<div id="left">Flexbox layout module, makes it easier to design flexbox responsive layout struture without having to use floats and positioning</div>
+				<div id="right">CSS Grid layout module offers grid based layout system without having to use floats and positioning </div>
+		
+		</div>
+
+	</body>
+</html>
